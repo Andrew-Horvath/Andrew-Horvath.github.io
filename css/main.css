@@ -141,7 +141,7 @@ header {
 }
 
 .nav-bar-custom {
-  background-color: rgb(221, 21, 134);
+  background-color: rgb(16, 31, 56);
   left: 0;
   position: fixed;
   right: 0;
@@ -215,7 +215,7 @@ header {
 }
 
 .button-ah-container {
-  background: rgb(221, 21, 134);
+  background: rgb(16, 31, 56);
   margin: 1rem 0 0 0;
   width: 100%;
   max-width: 250px;
@@ -404,7 +404,7 @@ html {
 }
 
 body {
-  background-color: rgb(221, 21, 134);
+  background-color: rgb(16, 31, 56);
   counter-reset: link sectionTitles;
 }
 
@@ -430,7 +430,7 @@ h3::after {
   flex: 1 1 auto;
   height: 0.25rem;
   min-width: 5rem;
-  background: linear-gradient(to right, rgb(171, 188, 219), rgb(221, 21, 134));
+  background: linear-gradient(to right, rgb(171, 188, 219), rgb(16, 31, 56));
   margin-left: 0.75rem;
 }
 
