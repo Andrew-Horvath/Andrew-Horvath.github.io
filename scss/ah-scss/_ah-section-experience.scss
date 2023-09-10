@@ -11,7 +11,7 @@ $secondary: $accent-inactive;
 
 /* tab setting */
 $tab-count: 4;
-$indicator-width: 50px;
+$indicator-width: 60px;
 $indicator-height: 4px;
 
 /* breakpoints */
@@ -49,44 +49,53 @@ $content-selector: "~ .container-content-experience > article";
 }
 
 .tabs {
-    padding: 1.5rem;
+    position: relative;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    width: 95%;
     margin: 0 auto;
     height: fit-content;
+    background: rgb(21, 37, 64);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: .5rem;
     min-width: calc($tab-count * 7rem);
+    max-width: 90rem;
   
     input[name="tab-control"] {
         display: none;
-    }
-  
-    ul li label {
-        font-size: 3rem;
     }
   
   ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding-left: 0;
+    margin-bottom: .25rem;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
     li {
-      // flex: 1 1 auto;
-      // width: calc(100%/$tab-count);
-    //   padding: 0 1rem;
-    //   text-align: center;
+      flex: 1;
+      width: calc(100%/$tab-count);
+      padding: 0 1rem;
+      text-align: center;
       
       label {
         transition: all 0.3s ease-in-out;
         color: $text-blue-200;
+        font-size: 4rem;
         overflow: hidden;
         text-overflow: ellipsis;
         display: block;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-        
+
+        span {
+          margin-left: 1rem;
+          font-size: 2rem;
+
+        }
         i {
           transition: all 0.2s ease-in-out;
         }   
@@ -103,14 +112,14 @@ $content-selector: "~ .container-content-experience > article";
   .slider {
     position: relative;
     width: calc(100%/$tab-count);
-    transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+    transition: all 0.33s;
     .indicator {
       position: relative;
       width: $indicator-width;
       max-width: 100%;
       margin: 0 auto;
       height: $indicator-height;
-      background: red;
+      background: $highlight-accent;
       border-radius: 1px;     
     }
 
@@ -129,18 +138,8 @@ $content-selector: "~ .container-content-experience > article";
       }
      
       h4 {
+        padding: 2rem 0;
         color: $secondary-accent;
-        
-        // &::after {
-        //   content: "";
-        //   position: relative;
-        //   display: block;
-        //   width: 100%;
-        //   height: 3px;
-        //   background: red;
-        //   margin-top: 5px;
-        //   left: 1px;
-        // }
       }
     }
   }
