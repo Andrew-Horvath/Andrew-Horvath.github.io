@@ -10,14 +10,13 @@
 .ah-h1-full-name {
     margin: 0 0 1rem 0;
 }
-
+//styles and formatting for button
 .button-ah-container {
-    background: $bg;
-    margin: 1rem 0 0 0;
+    background: none;
+    margin: 4rem 0 0 0;
     width: 100%;
     max-width: 250px;
     padding: 0 .5rem;
-    // max-width: 20rem; add at sm breakpoint
 }
 .button-ah-perspective {
     width: 100%;

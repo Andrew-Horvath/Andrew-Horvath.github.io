@@ -20,13 +20,13 @@ a, p, button, div, span {
 
 h1 {
   font-family: "felt-tip-senior", Caveat, sans-serif;
-  font-size: 6rem;
+  font-size: 5.5rem;
   line-height: 0.7;
   color: rgb(111, 190, 68);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgb(114, 162, 243);
 }
 
@@ -215,8 +215,8 @@ header {
 }
 
 .button-ah-container {
-  background: rgb(16, 31, 56);
-  margin: 1rem 0 0 0;
+  background: none;
+  margin: 4rem 0 0 0;
   width: 100%;
   max-width: 250px;
   padding: 0 0.5rem;
@@ -461,5 +461,11 @@ section {
 }
 
 #about, #experience, #projects, #contact {
-  margin: 7rem 0 0 0;
+  --margin: 60px 0;
+  margin: var(--margin);
+}
+@media (max-width: 480px) {
+  #about, #experience, #projects, #contact {
+    --margin: 125px 0;
+  }
 }/*# sourceMappingURL=main.css.map */

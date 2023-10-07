@@ -6,6 +6,7 @@
 //user created scss files
 @import '../scss/ah-scss/ah-variables';
 @import '../scss/ah-scss/typography';
+@import '../scss/ah-scss/ah-breakpoints';
 @import '../scss/ah-scss/header-nav';
 @import '../scss/ah-scss/ah-section-main-landing';
 @import '../scss/ah-scss/ah-section-about';
@@ -55,7 +56,12 @@ section {
     padding: 2rem 1rem;
 }
 #about, #experience, #projects, #contact {
-        margin: 7rem 0 0 0;
+    --margin: 60px 0;
+    margin: var(--margin);
+
+    @media (max-width: 480px) {
+    --margin: 125px 0;
+}
 }
 
 footer {
